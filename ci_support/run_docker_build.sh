@@ -5,8 +5,6 @@
 FEEDSTOCK_ROOT=$(cd "$(dirname "$0")/.."; pwd;)
 RECIPE_ROOT=$FEEDSTOCK_ROOT/recipe
 
-# library dependencies for matplotlib
-yum install -y libXext libXrender libSM tk libX11-devel
 docker info
 
 config=$(cat <<CONDARC
@@ -39,6 +37,8 @@ echo "$config" > ~/.condarc
 # A lock sometimes occurs with incomplete builds. The lock file is stored in build_artefacts.
 conda clean --lock
 
+# library dependencies for matplotlib
+yum install -y libXext libXrender libSM tk libX11-devel
 conda info
 
 
