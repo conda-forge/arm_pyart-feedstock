@@ -5,6 +5,8 @@
 FEEDSTOCK_ROOT=$(cd "$(dirname "$0")/.."; pwd;)
 RECIPE_ROOT=$FEEDSTOCK_ROOT/recipe
 
+# library dependencies for matplotlib
+yum install -y libXext libXrender libSM tk libX11-devel
 docker info
 
 config=$(cat <<CONDARC
