@@ -16,6 +16,10 @@ environment:
   # overridden in the matrix definition where appropriate.
   CONDA_PY: "27"
 
+  BINSTAR_TOKEN:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    secure: KDvUkPrcdKmV2MxakkyQlrLA0rE/6WSuXxD42UezzZjCB0TRqnnOeebSW03/SnFP
+
   matrix:
     - TARGET_ARCH: x86
       CONDA_NPY: 110
