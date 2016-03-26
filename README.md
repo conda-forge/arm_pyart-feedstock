@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/arm_pyart-feedstock.svg
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/arm_pyart-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/arm_pyart-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/arm_pyart-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/arm_pyart-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/arm_pyart/badges/version.svg)](https://anaconda.org/conda-forge/arm_pyart)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/arm_pyart/badges/downloads.svg)](https://anaconda.org/conda-forge/arm_pyart)
+
 
 Updating arm_pyart-feedstock
 ============================
