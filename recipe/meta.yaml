@@ -10,14 +10,14 @@ source:
     md5: 6c382dda78193c730a6a47d2d7b18eeb
 
 build:
-    skip: True # [win and py35 and np==19]
+    skip: True  # [win and py35 and np==19]
     number: 0
 
 requirements:
     build:
         - python
         - numpy x.x
-        - trmm_rsl   # [not win]
+        - trmm_rsl  # [not win]
 
     run:
         - python
@@ -33,7 +33,7 @@ test:
 
 about:
     home: http://arm-doe.github.io/pyart/
-    license: BSD
+    license: BSD-3-Clause
     summary: "Python ARM Radar Toolkit"
 
 extra:
