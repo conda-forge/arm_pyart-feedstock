@@ -3,7 +3,7 @@ About arm_pyart
 
 Home: http://arm-doe.github.io/pyart/
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD
 
