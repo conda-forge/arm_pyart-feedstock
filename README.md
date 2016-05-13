@@ -5,7 +5,7 @@ Home: http://arm-doe.github.io/pyart/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python ARM Radar Toolkit
 
@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/arm_pyart-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/arm_pyart-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/arm_pyart-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/arm_pyart-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/arm_pyart-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/arm_pyart-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/arm-pyart-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/arm-pyart-feedstock/branch/master)
 
 Current release info
 ====================
