@@ -1,16 +1,17 @@
-{% set version = "1.6.0" %}
+{% set name = "arm_pyart" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "2a2fa988cd753e4a29b794bb8f6cab12b72b0553bc1c3bf24a6fb2383992b884" %}
 
 package:
-    name: arm_pyart
-    version: {{ version }}
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-    fn: arm_pyart-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/a/arm_pyart/arm_pyart-{{ version }}.tar.gz
-    md5: 6c382dda78193c730a6a47d2d7b18eeb
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    skip: True  # [win and py35 and np==19]
     number: 0
 
 requirements:
