@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "b68ac9cb70b357ded1173a84a44883c3348b335fbb674f6c2e5b654171a1c9d7" %}
+{% set version = "1.9.0" %}
+{% set sha256 = "5dcd511a0dd7a76511d4e67f13d98e71a63f4927b988c03ca277a7d379387bcc" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,12 @@ build:
 requirements:
     build:
         - python
-        - numpy x.x
+        - numpy 1.11.*
         - trmm_rsl  # [not win]
 
     run:
         - python
-        - numpy x.x
+        - numpy >=1.11
         - scipy
         - matplotlib
         - netcdf4
@@ -40,3 +40,4 @@ about:
 extra:
     recipe-maintainers:
         - jjhelmus
+        - zssherman
