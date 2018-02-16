@@ -17,12 +17,12 @@ build:
 requirements:
     build:
         - python
-        - numpy x.x
+        - numpy 1.11.*
         - trmm_rsl  # [not win]
 
     run:
         - python
-        - numpy x.x
+        - numpy >=1.11
         - scipy
         - matplotlib
         - netcdf4
