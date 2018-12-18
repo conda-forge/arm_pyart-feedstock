@@ -1,6 +1,8 @@
 About arm_pyart
 ===============
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: http://arm-doe.github.io/pyart/
 
 Package license: BSD-3-Clause
@@ -16,7 +18,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/arm_pyart-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/arm_pyart-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/arm_pyart-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/arm_pyart-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/arm_pyart-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/arm-pyart-feedstock/branch/master)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/arm-pyart-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/arm-pyart-feedstock/branch/master)
 
 Current release info
 ====================
@@ -104,3 +106,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@jjhelmus](https://github.com/jjhelmus/)
+* [@zssherman](https://github.com/zssherman/)
+
