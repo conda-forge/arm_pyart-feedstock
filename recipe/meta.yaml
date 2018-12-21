@@ -16,10 +16,11 @@ build:
 
 requirements:
     build:
+        - {{ compiler('c') }}
+    host:
         - python
         - numpy 1.11.*
         - trmm_rsl  # [not win]
-
     run:
         - python
         - numpy >=1.11
