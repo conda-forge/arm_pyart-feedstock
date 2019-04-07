@@ -26,11 +26,12 @@ requirements:
         - {{ compiler('fortran') }}  # [not win]
     host:
         - python
-        - numpy 1.11.*
+        - pip
+        - numpy
         - trmm_rsl  # [not win]
     run:
         - python
-        - numpy >=1.11
+        - {{ pin_compatible('numpy') }}
         - scipy
         - matplotlib
         - netcdf4
