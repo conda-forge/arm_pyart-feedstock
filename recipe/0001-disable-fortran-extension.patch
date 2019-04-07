@@ -1,0 +1,25 @@
+From 8c6b7798a67e17d501691a4ba3fd97c8134f043b Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Sun, 7 Apr 2019 14:55:51 -0500
+Subject: [PATCH] disable fortran extension
+
+---
+ pyart/retrieve/setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pyart/retrieve/setup.py b/pyart/retrieve/setup.py
+index 1c59be8..6816603 100644
+--- a/pyart/retrieve/setup.py
++++ b/pyart/retrieve/setup.py
+@@ -8,7 +8,7 @@ def configuration(parent_package='', top_path=None):
+     config.add_data_dir('tests')
+ 
+     # Conditionally add Steiner echo classifier extension.
+-    config.add_extension('_echo_steiner', sources=[steiner_echo_gen_source])
++    #config.add_extension('_echo_steiner', sources=[steiner_echo_gen_source])
+ 
+     # KDP processing Cython extension
+     config.add_extension('_kdp_proc', sources=['_kdp_proc.c'])
+-- 
+2.7.4
+
