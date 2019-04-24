@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.9.2" %}
-{% set sha256 = "f1d3502242257a9306f2e06b1ca3aed5a6037b8a67066c58bc38a559d3ad3b8b" %}
+{% set version = "1.10.1" %}
+{% set sha256 = "a88ef49c505b9911f217117ce2e88e3ba5547c4b8662920802ba0aee9cf8dabc" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
     - 0001-disable-fortran-extension.patch  # [win]
 
 build:
-    number: 1000
+    number: 0
     script:  # [not win]
       - export RSL_PATH=$PREFIX  # [not win]
       - "{{ PYTHON }} -m pip install . --no-deps -vvv"  # [not win]
