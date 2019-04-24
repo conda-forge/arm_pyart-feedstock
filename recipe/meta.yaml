@@ -10,9 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    # Do not try to build the Fortran extension on Windows
-    - 0001-disable-fortran-extension.patch  # [win]
 
 build:
     number: 0
@@ -23,7 +20,6 @@ build:
 requirements:
     build:
         - {{ compiler('c') }}
-        - {{ compiler('fortran') }}  # [not win]
     host:
         - python
         - pip
