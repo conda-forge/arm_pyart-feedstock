@@ -21,7 +21,7 @@ requirements:
     build:
         - {{ compiler('c') }}
     host:
-        - python
+        - python >=3.6
         - pip
         - numpy
         - trmm_rsl  # [not win]
