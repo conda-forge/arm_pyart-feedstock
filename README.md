@@ -5,9 +5,13 @@ Home: http://arm-doe.github.io/pyart/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arm_pyart-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python ARM Radar Toolkit
+
+Development: http://arm-doe.github.io/pyart-docs-travis/dev_reference/index.html
+
+Documentation: https://arm-doe.github.io/pyart/
 
 The Python ARM Radar Toolkit, Py-ART, is an open source Python
 module containing a growing collection of weather radar algorithms
