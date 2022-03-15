@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.11.7" %}
-{% set sha256 = "7b9e1d32abc57ebfd8de2e45803ccd4a4b08c63717772c6c97dfbd85900f77ba" %}
+{% set version = "1.11.8" %}
+{% set sha256 = "2c845ea31a00c3c4d1800a6bd4cb428bf763cb71f7308f00979d5e640ca56538" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,6 @@ requirements:
     - python
     - pip
     - numpy
-    - pooch
     - trmm_rsl      # [not win]
   run:
     - python
@@ -33,6 +32,7 @@ requirements:
     - matplotlib-base
     - netcdf4
     - xarray
+    - pooch
     - trmm_rsl      # [not win]
 
 test:
