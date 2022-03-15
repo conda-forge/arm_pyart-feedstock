@@ -24,6 +24,7 @@ requirements:
     - python
     - pip
     - numpy
+    - pooch
     - trmm_rsl      # [not win]
   run:
     - python
@@ -32,7 +33,6 @@ requirements:
     - matplotlib-base
     - netcdf4
     - xarray
-    - pooch
     - trmm_rsl      # [not win]
 
 test:
