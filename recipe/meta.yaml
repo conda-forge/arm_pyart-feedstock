@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - cython
     - numpy
     - trmm_rsl      # [not win]
   run:
@@ -33,7 +34,6 @@ requirements:
     - netcdf4
     - xarray
     - pooch
-    - cython
     - trmm_rsl      # [not win]
 
 test:
