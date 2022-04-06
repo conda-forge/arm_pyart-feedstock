@@ -26,6 +26,7 @@ requirements:
     - cython
     - numpy
     - trmm_rsl      # [not win]
+    - pyproj        # [win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -35,7 +36,7 @@ requirements:
     - xarray
     - pooch
     - trmm_rsl      # [not win]
-    - pyproj          # [win]
+    - pyproj        # [win]
 
 test:
   imports:
