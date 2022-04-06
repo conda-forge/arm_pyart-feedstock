@@ -35,6 +35,7 @@ requirements:
     - xarray
     - pooch
     - trmm_rsl      # [not win]
+    - proj          # [win]
 
 test:
   imports:
