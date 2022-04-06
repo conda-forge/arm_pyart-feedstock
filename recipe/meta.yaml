@@ -33,6 +33,7 @@ requirements:
     - netcdf4
     - xarray
     - pooch
+    - cython
     - trmm_rsl      # [not win]
 
 test:
