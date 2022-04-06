@@ -27,6 +27,7 @@ requirements:
     - numpy
     - setuptools
     - trmm_rsl      # [not win]
+    - proj          # [win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -35,9 +36,7 @@ requirements:
     - netcdf4
     - xarray
     - pooch
-    - pyproj >=2.5.0
     - trmm_rsl      # [not win]
-    - cartopy >=0.17.0
 
 test:
   imports:
