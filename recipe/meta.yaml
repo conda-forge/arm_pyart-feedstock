@@ -26,18 +26,18 @@ requirements:
     - cython
     - numpy
     - setuptools
-    - proj          # [win]
     - trmm_rsl      # [not win]
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - scipy
     - matplotlib-base
     - netcdf4
     - xarray
     - pooch
+    - pyproj >=2.5.0
     - trmm_rsl      # [not win]
-    - cartopy
+    - cartopy >=0.17.0
 
 test:
   imports:
