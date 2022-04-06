@@ -36,7 +36,6 @@ requirements:
     - xarray
     - pooch
     - trmm_rsl      # [not win]
-    - pyproj
     - cartopy
 
 test:
