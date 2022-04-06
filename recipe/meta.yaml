@@ -25,6 +25,7 @@ requirements:
     - pip
     - cython
     - numpy
+    - setuptools
     - trmm_rsl      # [not win]
     - pyproj        # [win]
   run:
