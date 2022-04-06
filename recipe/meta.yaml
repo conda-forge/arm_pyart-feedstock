@@ -30,7 +30,7 @@ requirements:
     - trmm_rsl      # [not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - scipy
     - matplotlib-base
     - netcdf4
