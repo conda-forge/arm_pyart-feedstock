@@ -15,7 +15,7 @@ build:
   number: 1
   script:   # [not win]
     - export RSL_PATH=$PREFIX    # [not win]
-    - {{ PYTHON }} -m pip install . --no-deps -vvv      # [not win]
+    - {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
   build:
@@ -27,7 +27,6 @@ requirements:
     - numpy
     - setuptools
     - trmm_rsl      # [not win]
-    - proj          # [win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
