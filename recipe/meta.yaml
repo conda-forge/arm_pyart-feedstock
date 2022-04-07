@@ -15,7 +15,7 @@ build:
   number: 0
   script:   # [not win]
     - export RSL_PATH=$PREFIX    # [not win]
-    - {{ PYTHON }} -m pip install . --no-deps -vvv
+    - {{ PYTHON }} -m pip install . --no-deps -vvv    # [not win]
 
 requirements:
   build:
@@ -26,6 +26,7 @@ requirements:
     - cython
     - numpy
     - setuptools
+    - versioneer
     - trmm_rsl      # [not win]
   run:
     - python
@@ -35,6 +36,8 @@ requirements:
     - netcdf4
     - xarray
     - pooch
+    - cartopy     # [win]
+    - pyproj    # [win]
     - trmm_rsl      # [not win]
 
 test:
