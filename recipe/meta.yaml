@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script:   # [not win]
     - export RSL_PATH=$PREFIX    # [not win]
     - {{ PYTHON }} -m pip install . --no-deps -vvv      # [not win]
@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools >=30.3.0
     - numpy
     - cython
     - trmm_rsl      # [not win]
@@ -34,11 +35,17 @@ requirements:
     - netcdf4
     - xarray
     - pooch
+    - cython
+    - versioneer
     - trmm_rsl      # [not win]
 
 test:
   imports:
     - pyart
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://arm-doe.github.io/pyart/
@@ -57,7 +64,7 @@ about:
     atmospheric communities to examine, process, and analyze data from many
     types of weather radars.
   doc_url: https://arm-doe.github.io/pyart/
-  dev_url: http://arm-doe.github.io/pyart-docs-travis/dev_reference/index.html
+  dev_url: https://arm-doe.github.io/pyart/API/index.html
 
 extra:
   recipe-maintainers:
