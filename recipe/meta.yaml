@@ -35,6 +35,8 @@ requirements:
     - netcdf4
     - xarray
     - pooch
+    - cython
+    - versioneer
     - trmm_rsl      # [not win]
 
 test:
