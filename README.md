@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arm_pyart-feeds
 
 Summary: Python ARM Radar Toolkit
 
-Development: http://arm-doe.github.io/pyart-docs-travis/dev_reference/index.html
+Development: https://arm-doe.github.io/pyart/API/index.html
 
 Documentation: https://arm-doe.github.io/pyart/
 
@@ -277,7 +277,4 @@ Feedstock Maintainers
 
 * [@mgrover1](https://github.com/mgrover1/)
 * [@zssherman](https://github.com/zssherman/)
-
-
-<!-- dummy commit to enable rerendering -->
 
