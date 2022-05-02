@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.12.1" %}
-{% set sha256 = "1cabdaded547118a27e1cd71d6ba8960173a55e5083550790fba345dadbb8165" %}
+{% set version = "1.12.2" %}
+{% set sha256 = "6468893aca2fab4e7b84b2cdfb27f126823ddab92cc756ee6e1c87bc0aa160ea" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - {{ PYTHON }} -m pip install . --no-deps -vvv
@@ -24,6 +24,7 @@ requirements:
     - python
     - pip
     - setuptools >=30.3.0
+    - setuptools_scm
     - numpy
     - cython
     - trmm_rsl      # [not win]
@@ -37,6 +38,8 @@ requirements:
     - pooch
     - cython
     - versioneer
+    - fsspec
+    - s3fs
     - trmm_rsl      # [not win]
 
 test:
