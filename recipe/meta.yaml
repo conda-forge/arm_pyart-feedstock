@@ -39,6 +39,7 @@ requirements:
     - cython
     - versioneer
     - fsspec
+    - s3fs
     - trmm_rsl      # [not win]
 
 test:
