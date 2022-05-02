@@ -38,6 +38,7 @@ requirements:
     - pooch
     - cython
     - versioneer
+    - fsspec
     - trmm_rsl      # [not win]
 
 test:
