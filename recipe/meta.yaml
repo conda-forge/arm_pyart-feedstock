@@ -34,7 +34,7 @@ requirements:
     - scipy
     - matplotlib-base
     - netcdf4
-    - xarray >=0.21.1
+    - xarray
     - pooch
     - cython
     - versioneer
