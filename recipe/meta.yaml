@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.12.2" %}
-{% set sha256 = "6468893aca2fab4e7b84b2cdfb27f126823ddab92cc756ee6e1c87bc0aa160ea" %}
+{% set version = "1.12.4" %}
+{% set sha256 = "0858667b6f11e05606fb81eb5db6ef443f030445fe2d6f25a099fd1738c52d21" %}
 
 package:
   name: {{ name|lower }}
@@ -45,8 +45,6 @@ requirements:
 test:
   imports:
     - pyart
-  commands:
-    - pip check
   requires:
     - pip
 
