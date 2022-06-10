@@ -45,8 +45,6 @@ requirements:
 test:
   imports:
     - pyart
-  commands:
-    - pip check
   requires:
     - pip
 
