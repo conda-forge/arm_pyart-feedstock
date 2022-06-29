@@ -25,7 +25,7 @@ requirements:
     - pip
     - setuptools >=30.3.0
     - setuptools_scm
-    - numpy
+    - numpy >1.18.0
     - cython
     - trmm_rsl      # [not win]
   run:
@@ -40,6 +40,7 @@ requirements:
     - versioneer
     - fsspec
     - s3fs
+    - cftime >=1.6.0
     - trmm_rsl      # [not win]
 
 test:
