@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.12.6" %}
-{% set sha256 = "f7e75e771a454624a46c0b974fef7634f044bb1205b38be0ef3d6c22cf59775e" %}
+{% set version = "1.12.7" %}
+{% set sha256 = "b7b23ecef270c60b017d94603941f0c117de072a10125c5f58c0685d801f9161" %}
 
 package:
   name: {{ name|lower }}
@@ -40,7 +40,7 @@ requirements:
     - versioneer
     - fsspec
     - s3fs
-    - cftime >=1.6.0
+    - cftime
     - trmm_rsl      # [not win]
 
 test:
