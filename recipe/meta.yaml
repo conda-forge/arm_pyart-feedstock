@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.12.7" %}
-{% set sha256 = "b7b23ecef270c60b017d94603941f0c117de072a10125c5f58c0685d801f9161" %}
+{% set version = "1.13.0" %}
+{% set sha256 = "ffa72b0ae3c759ddd7f5b3a507f9cf2e51ac9b4de05f971f74258efc3541fe9a" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,6 @@ requirements:
     - setuptools_scm
     - numpy >1.18.0
     - cython
-    - trmm_rsl      # [not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -41,7 +40,6 @@ requirements:
     - fsspec
     - s3fs
     - cftime
-    - trmm_rsl      # [not win]
 
 test:
   imports:
