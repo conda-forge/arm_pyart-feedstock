@@ -30,7 +30,7 @@ requirements:
     - setuptools >=30.3.0
     - setuptools_scm
     - numpy >1.18.0
-    - cython
+    - cython >=0.24.0
   run:
     - python
     - {{ pin_compatible('numpy') }}
