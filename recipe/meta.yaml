@@ -20,26 +20,25 @@ build:
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - python >=3.7
+    - python
     - pip
-    - setuptools >=30.3.0
-    - setuptools_scm
-    - numpy >1.18.0
+    - numpy
     - cython >=0.24.0
   run:
-    - python >=3.7
+    - python
     - {{ pin_compatible('numpy') }}
+    - setuptools >=19.6
+    - setuptools_scm
+    - numpy >=1.13.3
     - scipy
     - matplotlib-base
     - netcdf4
     - xarray
     - pooch
-    - cython
     - versioneer
     - fsspec
     - s3fs
