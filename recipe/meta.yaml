@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.13.3" %}
-{% set sha256 = "bc5349b3cf31f8642971a284135af5bf058c1f11092f119230a252412baa4fb3" %}
+{% set version = "1.14.0" %}
+{% set sha256 = "33a63ace531a40e53880dd4deca724a17375b93b032c88b5a797ba2595d55b51" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - {{ PYTHON }} -m pip install . --no-deps -vvv
