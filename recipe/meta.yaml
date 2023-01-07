@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.14.2" %}
-{% set sha256 = "6fd2158379e78de331415cf2c29312191663b3ca83c4bdbb2544b1ae735e7ed9" %}
+{% set version = "1.14.3" %}
+{% set sha256 = "62b3f38163b8fb14b8db8ecf48e21efc33a4650556a7569201cf2299bcbbd098" %}
 
 package:
   name: {{ name|lower }}
@@ -43,7 +43,6 @@ requirements:
     - fsspec
     - s3fs
     - cftime
-    - cython >=0.24.0
 
 test:
   imports:
