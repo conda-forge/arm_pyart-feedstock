@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - {{ PYTHON }} -m pip install . --no-deps -vvv
@@ -43,6 +43,7 @@ requirements:
     - fsspec
     - s3fs
     - cftime
+    - cython >=0.24.0
 
 test:
   imports:
