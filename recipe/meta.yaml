@@ -36,6 +36,7 @@ requirements:
     - setuptools_scm
     - numpy >=1.18
     - scipy
+    - cython >=0.24.0
     - matplotlib-base
     - netcdf4
     - xarray
