@@ -1,11 +1,11 @@
-About arm_pyart
-===============
+About arm_pyart-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arm_pyart-feedstock/blob/main/LICENSE.txt)
 
 Home: http://arm-doe.github.io/pyart/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arm_pyart-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python ARM Radar Toolkit
 
