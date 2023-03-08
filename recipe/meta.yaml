@@ -24,12 +24,12 @@ requirements:
     - numpy >=1.18                           # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.8
     - pip
     - numpy >=1.18
     - cython >=0.24.0
   run:
-    - python
+    - python >=3.8
     - {{ pin_compatible('numpy') }}
     - setuptools
     - setuptools_scm
