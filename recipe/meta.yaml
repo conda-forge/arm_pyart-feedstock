@@ -19,17 +19,17 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
+    - python >=3.9                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy >=1.18                           # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.9
     - pip
     - numpy >=1.18
     - cython >=0.24.0
   run:
-    - python
+    - python >=3.9
     - {{ pin_compatible('numpy') }}
     - setuptools
     - setuptools_scm
