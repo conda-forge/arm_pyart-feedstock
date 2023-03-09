@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.14.5" %}
-{% set sha256 = "a06d06f396a261de2add69aa2262670004f039c08c7e0bc141beb7041043341b" %}
+{% set version = "1.14.6" %}
+{% set sha256 = "9efbe93b7120b21cb9ad0992fe52ded8ce2ccd801280c6f951aa4cec7dba1493" %}
 
 package:
   name: {{ name|lower }}
@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  skip: True  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - {{ PYTHON }} -m pip install . --no-deps -vvv
@@ -28,6 +29,7 @@ requirements:
     - pip
     - numpy >=1.18
     - cython >=0.24.0
+    - setuptools_scm
   run:
     - python
     - {{ pin_compatible('numpy') }}
