@@ -45,6 +45,7 @@ requirements:
     - fsspec
     - s3fs
     - cftime
+    - xradar
 
 test:
   imports:
