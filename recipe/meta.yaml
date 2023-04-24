@@ -46,7 +46,8 @@ requirements:
     - s3fs
     - cftime
     - xradar
-
+    - open-radar-data
+    - pandas <2.0
 test:
   imports:
     - pyart
