@@ -47,7 +47,7 @@ requirements:
     - cftime
     - xradar
     - open-radar-data
-    - pandas <2.0
+    - pandas
 test:
   imports:
     - pyart
