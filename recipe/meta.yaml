@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
@@ -45,7 +45,7 @@ requirements:
     - fsspec
     - s3fs
     - cftime
-    - xradar
+    - xradar >=0.5.0
     - open-radar-data
     - pandas
     - mda-xdrlib
