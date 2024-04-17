@@ -28,14 +28,14 @@ requirements:
     - python
     - pip
     - numpy >=1.18
-    - cython >=3.0.3,<3.1
+    - cython >=0.24.0
     - setuptools_scm
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - setuptools
     - setuptools_scm
-    - numpy
+    - numpy >=1.18
     - scipy
     - matplotlib-base
     - netcdf4
