@@ -16,7 +16,7 @@ build:
   skip: true  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
-    - export CFLAGS="--std=c90 -Wno-implicit-function-declaration"
+    - export CFLAGS="-Wno-implicit-function-declaration"
     - {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
