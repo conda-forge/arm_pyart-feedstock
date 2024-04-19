@@ -10,8 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - patches/fix-numpy-2-0-build.patch
 
 build:
   number: 0
@@ -26,7 +24,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy >=1.18                           # [build_platform != target_platform]
-    - cython >=0.24.0                        # [build_platform != target_platform]
+    - cython >=0.24.0,<3.0.10                # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
