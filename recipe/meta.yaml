@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.18.1" %}
-{% set sha256 = "d22a123416c097c4abe2b0b84ee57543644ce6b9c90d2c969c0e1f30aa49a326" %}
+{% set version = "1.18.3" %}
+{% set sha256 = "be3ded18ddc99cf25f3c73d99af8da3ff9c6e55567b63a86fe264e7ace4ee155" %}
 
 package:
   name: {{ name|lower }}
@@ -12,10 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
+    - export CFLAGS="-Wno-implicit-function-declaration"
     - {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
@@ -23,12 +24,13 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy >=1.18                           # [build_platform != target_platform]
+    - cython >=0.24.0,<3.0.10                # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
     - pip
     - numpy >=1.18
-    - cython >=0.24.0
+    - cython >=0.24.0,<3.0.10
     - setuptools_scm
   run:
     - python
