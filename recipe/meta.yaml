@@ -11,7 +11,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - patches/numpy-2-0-patch
+    - patches/fix-numpy-2-0-build.patch
 
 build:
   number: 0
