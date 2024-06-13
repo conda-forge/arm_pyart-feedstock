@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
@@ -26,6 +26,7 @@ requirements:
     - numpy >=1.18                           # [build_platform != target_platform]
     - cython >=0.24.0,<3.0.10                # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -34,7 +35,6 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - setuptools
     - setuptools_scm
     - numpy >=1.18
