@@ -38,7 +38,7 @@ requirements:
     - setuptools
     - setuptools_scm
     - numpy >=1.18
-    - scipy
+    - scipy <1.14
     - matplotlib-base
     - netcdf4
     - xarray
