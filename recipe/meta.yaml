@@ -42,6 +42,7 @@ requirements:
     - matplotlib-base
     - netcdf4
     - xarray
+    - pint
     - pooch
     - versioneer
     - fsspec
