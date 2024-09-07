@@ -32,7 +32,7 @@ requirements:
     - pip
     - numpy >=1.18
     - cython >=0.24.0,<3.0.10
-    - setuptoools
+    - setuptools
     - setuptools_scm
   run:
     - python
