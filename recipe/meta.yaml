@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.19.0" %}
-{% set sha256 = "89daec7b1f96ffae6e9dc1902b5be46e462cfde6285bae4ce4e885d354d309dd" %}
+{% set version = "1.19.1" %}
+{% set sha256 = "3f9f06e93a645f383ac17c0452558cf369fdb90ac4c5286b6c12e4eb3028427c" %}
 
 package:
   name: {{ name|lower }}
@@ -32,6 +32,7 @@ requirements:
     - pip
     - numpy >=1.18
     - cython >=0.24.0,<3.0.10
+    - setuptools
     - setuptools_scm
   run:
     - python
