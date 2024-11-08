@@ -42,14 +42,14 @@ requirements:
     - scipy
     - matplotlib-base
     - netcdf4
-    - xarray
+    - xarray <=2024.9.0
     - pint
     - pooch
     - versioneer
     - fsspec
     - s3fs
     - cftime
-    - xradar >=0.5.0
+    - xradar <=0.7.0
     - open-radar-data
     - pandas
     - mda-xdrlib
