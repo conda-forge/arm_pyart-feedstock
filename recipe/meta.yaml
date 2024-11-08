@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.19.1" %}
-{% set sha256 = "3f9f06e93a645f383ac17c0452558cf369fdb90ac4c5286b6c12e4eb3028427c" %}
+{% set version = "1.19.2" %}
+{% set sha256 = "62f00b5953e31845db66be829db50a3c0be7fc669f47dc0857f5e313df702e64" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<39]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
@@ -42,14 +42,14 @@ requirements:
     - scipy
     - matplotlib-base
     - netcdf4
-    - xarray
+    - xarray <=2024.9.0
     - pint
     - pooch
     - versioneer
     - fsspec
     - s3fs
     - cftime
-    - xradar >=0.5.0
+    - xradar <=0.7.0
     - open-radar-data
     - pandas
     - mda-xdrlib
