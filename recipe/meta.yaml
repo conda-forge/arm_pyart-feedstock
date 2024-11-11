@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<39]
+  skip: true  # [py<310]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - export CFLAGS="-Wno-implicit-function-declaration"
