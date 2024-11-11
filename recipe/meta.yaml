@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "1.19.2" %}
-{% set sha256 = "62f00b5953e31845db66be829db50a3c0be7fc669f47dc0857f5e313df702e64" %}
+{% set version = "1.19.3" %}
+{% set sha256 = "ad041354248c7d3cd879a8edfba15a96749eb8e5f18f9374b3371be553e0ace5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
-  skip: true  # [py<39]
+  skip: true  # [py<310]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - export CFLAGS="-Wno-implicit-function-declaration"
@@ -42,14 +42,14 @@ requirements:
     - scipy
     - matplotlib-base
     - netcdf4
-    - xarray <=2024.9.0
+    - xarray >=2024.10.0
     - pint
     - pooch
     - versioneer
     - fsspec
     - s3fs
     - cftime
-    - xradar <=0.7.0
+    - xradar >=0.8.0
     - open-radar-data
     - pandas
     - mda-xdrlib
