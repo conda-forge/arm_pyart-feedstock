@@ -24,14 +24,14 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy >=1.18                           # [build_platform != target_platform]
-    - cython >=0.24.0,<3.0.10                # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
     - python
     - pip
     - numpy >=1.18
-    - cython >=0.24.0,<3.0.10
+    - cython
     - setuptools
     - setuptools_scm
   run:
