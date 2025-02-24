@@ -54,6 +54,7 @@ requirements:
     - pandas
     - mda-xdrlib
     - cartopy
+    - cmweather
 test:
   imports:
     - pyart
