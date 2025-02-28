@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "64134189b7891f6258319bdadbffe540deb72b96182866784e5487635a8a8f3d" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "b01c221023e927cd6f6652100bfe270e52f0d8db1a1dc78898fb50370571251e" %}
 
 package:
   name: {{ name|lower }}
