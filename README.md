@@ -222,7 +222,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-arm_pyart-green.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-arm__pyart-green.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/arm_pyart.svg)](https://anaconda.org/conda-forge/arm_pyart) |
 
 Installing arm_pyart
 ====================
