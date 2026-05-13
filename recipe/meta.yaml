@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "1bbb243bc4dc641018ecce1ef3b59db2cc8cf4688647b11293c962104a28d9e6" %}
+{% set version = "2.2.1" %}
+{% set sha256 = "ac1c826b96cbf0d7d93b495b4b1be2e6188e8983911cefcac089b53b555ac6a7" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<310]
+  skip: true  # [py<311]
   script:
     - export RSL_PATH=$PREFIX    # [not win]
     - export CFLAGS="-Wno-implicit-function-declaration"
