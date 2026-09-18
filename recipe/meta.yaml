@@ -1,6 +1,6 @@
 {% set name = "arm_pyart" %}
-{% set version = "2.2.5" %}
-{% set sha256 = "c4f03f8f260437f47245ac724be0b65d0fbe14548266a61541f6f6bc0f3c0870" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "413b522005f64c10aacef388a7ba68789d245c524df8fa0bb676d96605b6dc7c" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
